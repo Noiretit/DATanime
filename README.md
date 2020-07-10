@@ -1,4 +1,4 @@
-![https://media.giphy.com/media/12CSpwCtoy1Vfy/giphy.gif]()
+![Akira](https://media.giphy.com/media/12CSpwCtoy1Vfy/giphy.gif)
 
 # thatAnimeFinder
 
