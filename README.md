@@ -1,6 +1,4 @@
-![https://66.media.tumblr.com/25553be62913712696cf2f35de65f82b/93e427d6eb6c5f85-7d/s640x960/7d86c89222c5bbdae62a6e68ee4a0f426d5c5eb6.gif]()
-
-
+![https://media.giphy.com/media/12CSpwCtoy1Vfy/giphy.gif]()
 
 # thatAnimeFinder
 
@@ -12,7 +10,7 @@
 
 thatAnimeFinder is static responsive web page, an all-timer anime finder for the top 10 best animes from the year and genre selected.
 
-thatAnimeFinder is developed using Javascript as part of the Ironhack Web Development bootcamp (Web-Dev Fulltime 062020) using the Kitsu API.
+thatAnimeFinder is developed using Javascript as part of the first project on the Ironhack Web Development bootcamp (Web-Dev Fulltime 062020) using the Kitsu API.
 
 
 #### MVP
