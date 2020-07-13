@@ -31,10 +31,12 @@
             <div class="collapse navbar-collapse justify-content-end px-4" id="navbarNav">
                 <ul class="navbar-nav px-5">
                     <li class="nav-item px-3">
-                        <a class="nav-link">Register</a>
+                        <!--Data-target links the nav-bar element with the modal (pop-up) id-->
+                        <a data-toggle="modal" data-target="#registerModal" class="nav-link">Register</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link">Log-in</a>
+                        <!--Data-target links the nav-bar element with the modal (pop-up) id-->
+                        <a data-toggle="modal" data-target="#loginModal" class="nav-link">Log-in</a>
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link" href="faqs.html">FAQS</a>
@@ -63,6 +65,105 @@
                 <div class="col">10</div>
             </div>
         </div>
+        <!--Pop ups (modals)-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--Crea el pop-up log-in-->
+                    <!--The ID links this pop-up with the nav-bar element-->
+                    <div class="modal fade" id="loginModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!--Pop-up header-->
+                                <div class="modal-header">
+                                    <h1>Log-in</h1>
+                                    <!--Button to close-->
+                                    <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                                        <!--Close icon-->
+                                        <i class="fas fa-times"></i></button>
+                                </div>
+                                <!--Pop-up body-->
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputUser">User name</label>
+                                            <input type="user" class="form-control" id="inputUser"
+                                                placeholder="ie: manolodabest">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword"
+                                                placeholder="******">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--Pop-up footer-->
+                                <div class="modal-footer">
+                                    <!--Button to log-in-->
+                                    <button class="btn btn-success btn-lg">
+                                        <!--Log-in icon-->
+                                        <i class="fas fa-sign-in-alt btn-lg"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin del pop-up log-in-->
+
+                    <!--Crea el pop-up register-->
+                    <!--The ID links this pop-up with the nav-bar element-->
+                    <div class="modal fade" id="registerModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!--Pop-up header-->
+                                <div class="modal-header">
+                                    <h1>Register</h1>
+                                    <!--Button to close-->
+                                    <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                                        <!--Close icon-->
+                                        <i class="fas fa-times"></i></button>
+                                </div>
+                                <!--Pop-up body-->
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputUser">User name</label>
+                                            <input type="user" class="form-control" id="inputUser"
+                                                placeholder="ie: manolodabest">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email name</label>
+                                            <input type="email" class="form-control" id="inputEmail"
+                                                placeholder="ie: manolodabest@yahoo.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword"
+                                                placeholder="******">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputRepeatPassword">Repear your password</label>
+                                            <input type="password" class="form-control" id="inputRepeatPassword"
+                                                placeholder="******">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--Pop-up footer-->
+                                <div class="modal-footer">
+                                    <!--Button to register-->
+                                    <button class="btn btn-success btn-lg">
+                                        <!--Register icon-->
+                                        <i class="fas fa-user-plus btn-lg"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin del pop-up register-->
+                </div>
+            </div>
+        </div>
+        <!--End of pop-ups (modals)-->
     </main>
     <!--Fin de main-->
     <!--Footer-->
