@@ -29,3 +29,7 @@
 }
 
 /*END OF FAQS*/
+
+.modal-footer {
+  justify-content: center;
+}
