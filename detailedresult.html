@@ -67,27 +67,30 @@
                                     <!--Button to close-->
                                     <button class="btn btn-danger btn-lg" data-dismiss="modal">
                                         <!--Close icon-->
-                                        <i class="fas fa-times"></i></button>
+                                        <i class="fas fa-times"></i>
+                                    </button>
                                 </div>
                                 <!--Pop-up body-->
                                 <div class="modal-body">
                                     <form>
                                         <div class="form-group">
-                                            <label for="inputUser">User name</label>
-                                            <input type="user" class="form-control" id="inputUser"
-                                                placeholder="ie: manolodabest">
+                                            <label for="inputUserLogIn">User name</label>
+                                            <input type="user" class="form-control" id="inputUserLogIn"
+                                                placeholder="ie: manolodabest" />
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputPassword">Password</label>
-                                            <input type="password" class="form-control" id="inputPassword"
-                                                placeholder="******">
+                                            <label for="inputPasswordLogIn">Password</label>
+                                            <input type="password" class="form-control" id="inputPasswordLogIn"
+                                                placeholder="******" />
                                         </div>
                                     </form>
+                                    <!--Login message alerts-->
+                                    <div class="message-container-login"></div>
                                 </div>
                                 <!--Pop-up footer-->
                                 <div class="modal-footer">
                                     <!--Button to log-in-->
-                                    <button class="btn btn-success btn-lg">
+                                    <button type="submit" id="login-button" class="btn btn-success btn-lg">
                                         <!--Log-in icon-->
                                         <i class="fas fa-sign-in-alt btn-lg"></i>
                                     </button>
@@ -108,7 +111,8 @@
                                     <!--Button to close-->
                                     <button class="btn btn-danger btn-lg" data-dismiss="modal">
                                         <!--Close icon-->
-                                        <i class="fas fa-times"></i></button>
+                                        <i class="fas fa-times"></i>
+                                    </button>
                                 </div>
                                 <!--Pop-up body-->
                                 <div class="modal-body">
@@ -116,29 +120,31 @@
                                         <div class="form-group">
                                             <label for="inputUser">User name</label>
                                             <input type="user" class="form-control" id="inputUser"
-                                                placeholder="ie: manolodabest">
+                                                placeholder="ie: manolodabest" />
                                         </div>
                                         <div class="form-group">
                                             <label for="inputEmail">Email name</label>
                                             <input type="email" class="form-control" id="inputEmail"
-                                                placeholder="ie: manolodabest@yahoo.com">
+                                                placeholder="ie: manolodabest@yahoo.com" />
                                         </div>
                                         <div class="form-group">
                                             <label for="inputPassword">Password</label>
                                             <input type="password" class="form-control" id="inputPassword"
-                                                placeholder="******">
+                                                placeholder="******" />
                                         </div>
                                         <div class="form-group">
-                                            <label for="inputRepeatPassword">Repear your password</label>
+                                            <label for="inputRepeatPassword">Repeat your password</label>
                                             <input type="password" class="form-control" id="inputRepeatPassword"
-                                                placeholder="******">
+                                                placeholder="******" />
                                         </div>
                                     </form>
+                                    <!--Register message alerts-->
+                                    <div class="message-container-register"></div>
                                 </div>
                                 <!--Pop-up footer-->
                                 <div class="modal-footer">
                                     <!--Button to register-->
-                                    <button class="btn btn-success btn-lg">
+                                    <button type="submit" id="register-button" class="btn btn-success btn-lg">
                                         <!--Register icon-->
                                         <i class="fas fa-user-plus btn-lg"></i>
                                     </button>
@@ -180,6 +186,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="scripts/Register.js"></script>
+    <script src="scripts/User.js"></script>
+    <script src="scripts/Database.js"></script>
+    <script src="scripts/Validator.js"></script>
+    <script src="scripts/Login.js"></script>
 </body>
 
 </html>
