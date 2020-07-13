@@ -85,11 +85,13 @@
                       <input type="password" class="form-control" id="inputPasswordLogIn" placeholder="******" />
                     </div>
                   </form>
+                  <!--Login message alerts-->
+                  <div class="message-container-login"></div>
                 </div>
                 <!--Pop-up footer-->
                 <div class="modal-footer">
                   <!--Button to log-in-->
-                  <button class="btn btn-success btn-lg">
+                  <button type="submit" id="login-button" class="btn btn-success btn-lg">
                     <!--Log-in icon-->
                     <i class="fas fa-sign-in-alt btn-lg"></i>
                   </button>
@@ -134,8 +136,8 @@
                       <input type="password" class="form-control" id="inputRepeatPassword" placeholder="******" />
                     </div>
                   </form>
-                  <!--Error container-->
-                  <div class="message-container"></div>
+                  <!--Register message alerts-->
+                  <div class="message-container-register"></div>
                 </div>
                 <!--Pop-up footer-->
                 <div class="modal-footer">
@@ -186,6 +188,8 @@
   <script src="scripts/Register.js"></script>
   <script src="scripts/User.js"></script>
   <script src="scripts/Database.js"></script>
+  <script src="scripts/Validator.js"></script>
+  <script src="scripts/Login.js"></script>
 </body>
 
 </html>

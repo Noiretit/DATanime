@@ -2,38 +2,47 @@
   font-family: "Black";
   src: url("Itoya-Black.ttf");
 }
+
 @font-face {
   font-family: "BlackItalic";
   src: url("Itoya-BlackItalic.ttf");
 }
+
 @font-face {
   font-family: "Bold";
   src: url("Itoya-Bold.ttf");
 }
+
 @font-face {
   font-family: "BoldItalic";
   src: url("Itoya-BoldItalic.ttf");
 }
+
 @font-face {
   font-family: "Italic";
   src: url("Itoya-Italic.ttf");
 }
+
 @font-face {
   font-family: "Light";
   src: url("Itoya-Light.ttf");
 }
+
 @font-face {
   font-family: "LightItalic";
   src: url("Itoya-LightItalic.ttf");
 }
+
 @font-face {
   font-family: "Regular";
   src: url("Itoya-Regular.ttf");
 }
+
 @font-face {
   font-family: "UltraLight";
   src: url("Itoya-UltraLight.ttf");
 }
+
 @font-face {
   font-family: "UltraLightItalic";
   src: url("Itoya-UltraLightItalic.ttf");

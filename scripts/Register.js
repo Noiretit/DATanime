@@ -8,7 +8,7 @@ class Register {
         this.repeatPasswordInput = document.querySelector("#inputRepeatPassword");
 
         this.buttonInput = document.querySelector("#register-button");
-        this.errorsWrapper = document.querySelector(".message-container");
+        this.errorsWrapper = document.querySelector(".message-container-register");
     }
 
     //Gestionar cambios del input "email"
@@ -16,20 +16,41 @@ class Register {
         const email = event.target.value;
 
         //Validar el texto del input email
+        validator.validateValidEmail(email);
+
+        const errors = validator.getErrors(); //Almacena el listado de errores de Validator.js linea 12
+
+        //Si no hay errores...
+        if (!errors.invalidadEmailError) {
+            //compriueba si el email es único
+            validator.validateUniqueEmail(email);
+        };
+
+        this.setErrorMessages();
     };
 
     //Gestionar cambios del input "password"
     handlePasswordInput = (event) => {
         const password = event.target.value;
+        const passwordRepeat = this.repeatPasswordInput.value;
 
         //Validar el texto del input password
+        validator.validatePassword(password);
+        validator.validatePasswordRepeat(password, passwordRepeat);
+
+        this.setErrorMessages();
     };
 
     //Gestionar cambios del input "repeat-password"
     handleRepeatPasswordInput = (event) => {
-        const repeatPassword = event.target.value;
+        const passwordRepeat = event.target.value;
+        const password = this.passwordInput.value;
 
-        //Validar el texto del input repeatPassword
+        //Validar el texto del input password y repeatPassword
+        validator.validatePassword(password);
+        validator.validatePasswordRepeat(password, passwordRepeat);
+
+        this.setErrorMessages();
     };
 
     //Gestionar envío de los datos (submit)
@@ -54,6 +75,9 @@ class Register {
         this.emailInput.value = "";
         this.passwordInput.value = "";
         this.repeatPasswordInput.value = "";
+
+        this.showSuccessMessage();
+        this.removeMessages();
     };
 
     //Función auxiliar para registrar funciones de cada input
@@ -64,6 +88,53 @@ class Register {
         this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
         this.buttonInput.addEventListener("click", this.saveData);
     };
+
+    showSuccessMessage = () => {
+        // vacia los errores para que no se sumen
+        this.errorsWrapper.innerHTML = "";
+
+        const errorsObj = validator.getErrors();
+        // convertir el objeto a un array de strings
+        const errorsStringsArr = Object.values(errorsObj);
+
+        if (errorsStringsArr.length > 1) {
+            return;
+        }
+
+        const successMessageP = document.createElement('div');
+        successMessageP.classList.add("alert", "alert-success")
+        successMessageP.innerHTML = "Your account has been created! Yay!";
+
+        this.errorsWrapper.appendChild(successMessageP);
+
+    }
+
+    removeMessages = () => {
+        setTimeout(() => {
+            this.errorsWrapper.innerHTML = "";
+        }, 4000)
+    };
+
+    //Mostrar los mensajes que vienen desde el Validator.js /errors
+    setErrorMessages = () => {
+        //Vacía el message-container del HTML (targeteado por errorsWrapper)
+        //para que no se acumulen
+        this.errorsWrapper.innerHTML = "";
+
+        //Almacenamos el acceso de los errores en una variable
+        const errorsObj = validator.getErrors();
+
+        //Convertimos el objeto de errores en un array para iterar
+        const errorsStringArr = Object.values(errorsObj);
+
+        errorsStringArr.forEach((errorStr) => {
+            const errorMessageP = document.createElement("div");
+            errorMessageP.classList.add("alert", "alert-danger")
+            errorMessageP.innerHTML = errorStr;
+
+            this.errorsWrapper.appendChild(errorMessageP);
+        })
+    }
 }
 //Nueva instancia
 const register = new Register();
