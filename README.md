@@ -1,14 +1,14 @@
 ![Akira](https://media.giphy.com/media/12CSpwCtoy1Vfy/giphy.gif)
 
-# datAnime
+# DATanime
 
 #### Description
 
 ---
 
-datAnime is static responsive web page, an all-timer anime finder for the top 10 best animes from the year and genre selected.
+DATanime is static responsive web page, an all-timer anime finder for the top 10 best animes from the year and genre selected.
 
-datAnime is developed using Javascript as part of the first project on the Ironhack Web Development bootcamp (Web-Dev Fulltime 062020) using the Kitsu API.
+DATanime is developed using Javascript as part of the first project on the Ironhack Web Development bootcamp (Web-Dev Fulltime 062020) using the Kitsu API.
 
 #### MVP
 
