@@ -55,22 +55,54 @@
       </h1>
       <div class="container header-index my-5">
         <p class="lead"><i class="bold-itoya">DATanime</i> is way to find animes from all times and genres.</p>
-        <p class="lead">It's very easy to use: just click on the button down below and it will show you 10 random
-          animes of any year and genre. </p>
+        <p class="lead">It's very easy to use: select a year and a genre down below and it will show you the top 10 best
+          animes of that genre and year. </p>
         <p class="lead">すごい, <i class="bold-itoya">right?</i></p>
       </div>
       <div class="container pt-4">
         <form>
           <div class="form-group form-index p-4">
-            <label class="bold-itoya">Ready...</label>
+            <label for="yearOption">First select a year:</label>
+            <select class="form-control" id="yearOption">
+              <option></option>
+            </select>
           </div>
           <div class="form-group form-index p-4">
-            <label class="bold-itoya">set...</label>
+            <label for="genreOption">Now select a genre:</label>
+            <select class="form-control" id="genreOption">
+              <option>Action</option>
+              <option>Adventure</option>
+              <option>Angst</option>
+              <option>Comedy</option>
+              <option>Detective</option>
+              <option>Drama</option>
+              <option>Ecchi</option>
+              <option>Fantasy</option>
+              <option>Harem</option>
+              <option>Henshin</option>
+              <option>Horror</option>
+              <option>Isekai</option>
+              <option>Magical girl</option>
+              <option>Mystery</option>
+              <option>Psychological</option>
+              <option>Romance</option>
+              <option>Science fiction</option>
+              <option>Seinen</option>
+              <option>Shoujo</option>
+              <option>Shounen</option>
+              <option>Slice of life</option>
+              <option>Sports</option>
+              <option>Super power</option>
+              <option>Super natural</option>
+              <option>Thriller</option>
+              <option>Vampire</option>
+              <option>Virtual reality</option>
+              <option>Zombie</option>
+            </select>
           </div>
           <div class="form-group form-index p-4">
-            <button type="submit" id="search-button" class="btn btn-outline-primary btn-lg btn-block bold-itoya">
+            <button type="submit" id="search-button" class="btn btn-outline-primary btn-lg btn-block">
               <i class="fas fa-search"></i>
-              GO!
             </button>
           </div>
         </form>

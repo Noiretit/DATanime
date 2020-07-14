@@ -6,7 +6,7 @@
 
 ---
 
-DATanime is static responsive web page, an all-timer anime finder for the top 10 best animes from the year and genre selected.
+DATanime is static responsive web page all-timer anime finder.
 
 DATanime is developed using Javascript as part of the first project on the Ironhack Web Development bootcamp (Web-Dev Fulltime 062020) using the Kitsu API.
 
@@ -16,12 +16,12 @@ DATanime is developed using Javascript as part of the first project on the Ironh
 
 - Responsive webpage (mobile-first, tablet, laptop, desktop).
 
-- Displays the top 10 best anime (by score) from the selected year and genre in an ordered way (user-friendly).
+- Displays 10 random animes from any time and genre in an ordered way (user-friendly).
 - Nav-bar (containing a pop-up register form, a pop-up log-in form (forms with validation), FAQS link) and footer on every page.
 - A Home-page with:
-  - an anime finder form (by year AND genre).
+  - an anime randomizer button.
 - A results page with:
-  - the top 10 animes of the year and genre, showing title, main genre and year.
+  - the 10 selected animes showing title, year and genre.
 - More detailed results page depending on the anime selected showing
   - title, genres (if more than one), aired year and synopsis.
 - A FAQS page.
@@ -37,7 +37,7 @@ DATanime is developed using Javascript as part of the first project on the Ironh
 - More search options:
   - only by year (no genre)
   - only by genre (no year)
-  - of all times (no year no genre)
+  - by year and genre.
 - "Suggest me something": shows a random detailed anime from any year/genre/score.
 - Carousel with random anime pictures in the background
 
@@ -49,7 +49,7 @@ DATanime is developed using Javascript as part of the first project on the Ironh
 - Homepage (open menu when menu reduces to an icon)
 - Homepage: register pop-up
 - Homepage: log-in pop-up
-- Results: top 10 list
+- Results: 10 anime list
 - Results: detailed info of selected anime (from list)
 - FAQS
 
@@ -78,5 +78,3 @@ https://trello.com/b/ssJxm3bw/m1-proyecto-datanime
 https://github.com/Noiretit
 
 ##### Slides
-
-URLs for the project presentation () slides.com
