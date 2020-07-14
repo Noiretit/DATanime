@@ -27,6 +27,8 @@ class Register {
         };
 
         this.setErrorMessages();
+
+        this.checkButton();
     };
 
     //Gestionar cambios del input "password"
@@ -39,6 +41,8 @@ class Register {
         validator.validatePasswordRepeat(password, passwordRepeat);
 
         this.setErrorMessages();
+
+        this.checkButton();
     };
 
     //Gestionar cambios del input "repeat-password"
@@ -51,6 +55,8 @@ class Register {
         validator.validatePasswordRepeat(password, passwordRepeat);
 
         this.setErrorMessages();
+
+        this.checkButton();
     };
 
     //Gestionar envío de los datos (submit)
@@ -78,6 +84,11 @@ class Register {
 
         this.showSuccessMessage();
         this.removeMessages();
+
+        //Reinicia los errores del validator
+        validator.resetValidator();
+        //Desactiva el botón register de nuevo
+        this.buttonInput.disabled = true;
     };
 
     //Función auxiliar para registrar funciones de cada input
@@ -107,6 +118,18 @@ class Register {
 
         this.errorsWrapper.appendChild(successMessageP);
 
+    }
+
+    //Activa o desactiva la propiedad del botón de register dependiendo de si hay errores o no.
+    checkButton = () => {
+        const errorsObj = validator.getErrors();
+        const errorsArr = Object.values(errorsObj);
+
+        if (errorsArr.length > 0) {
+            this.buttonInput.disabled = true;
+        } else {
+            this.buttonInput.disabled = false;
+        }
     }
 
     removeMessages = () => {
