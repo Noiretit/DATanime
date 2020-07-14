@@ -46,13 +46,27 @@
         </nav>
     </header>
     <!--Fin de navbar-->
-    <!--Main-->
-    <main class="main-section py-3">
+    <!--Content-->
+    <main class="main-section pb-4">
+        <div class="container-fluid mb-4">
+            <div class="row">
+                <!--Imagen cover large (API) del anime seleccionado desde listresult.js-->
+                <!--cada imagen sigue el patrón-->
+                <!--media.kitsu.io/anime/cover_images/IDDELANIME/large.jpg-->
+                <!--img-fluid para que quede como banner-->
+                <img id="detailedCoverImage" class="img-fluid"
+                    src="https://media.kitsu.io/anime/cover_images/1/large.jpg?1519178801">
+            </div>
+        </div>
         <div class="container">
-            <h1>DETAILED RESULTS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, aliquam eum sequi velit illo soluta
-                nihil
-                maxime dolorem a illum omnis. Alias quidem quas voluptatibus, aut ducimus quis earum adipisci!</p>
+            <div class="row">
+                <div class="col">
+                    <img id="detailedImage" src="https://media.kitsu.io/anime/poster_images/1/large.jpg?1431697256">
+                </div>
+                <div class="col-5 mt-2">
+                    <h4>Title: Cowboy Bebop</h4>
+                </div>
+            </div>
             <!--Pop ups (modals)-->
             <div class="container">
                 <div class="row">

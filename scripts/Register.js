@@ -151,11 +151,11 @@ class Register {
         const errorsStringArr = Object.values(errorsObj);
 
         errorsStringArr.forEach((errorStr) => {
-            const errorMessageP = document.createElement("div");
-            errorMessageP.classList.add("alert", "alert-danger")
-            errorMessageP.innerHTML = errorStr;
+            const errorMessageContainer = document.createElement("div");
+            errorMessageContainer.classList.add("alert", "alert-danger")
+            errorMessageContainer.innerHTML = errorStr;
 
-            this.errorsWrapper.appendChild(errorMessageP);
+            this.errorsWrapper.appendChild(errorMessageContainer);
         })
     }
 }

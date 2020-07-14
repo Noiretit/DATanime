@@ -82,6 +82,38 @@ body {
   border-radius: 15px;
 }
 
+/*END OF INDEX*/
+
+/*LIST RESULT*/
+#moreInfo {
+  background-color: rgba(121, 200, 214, 0.7);
+  text-align: center;
+  border-radius: 25px;
+}
+
+#listResult {
+  justify-content: center;
+}
+
+#listResult>div {
+  margin: 15px;
+}
+
+.card-body>h5 {
+  font-family: "Bold";
+}
+
+/*END OF LIST RESULT*/
+
+/*DETAILED RESULT*/
+
+
+#detailedImage {
+  border-radius: 5px;
+  border: 4px solid #9d9fd1;
+}
+
+/*END OF DETAILED RESULT*/
 /*FAQS*/
 
 .popup-title {
@@ -122,7 +154,7 @@ body {
 }
 
 #faq-title {
-  font-family: "Black";
+  font-family: "Bold";
 }
 
 /*END OF FAQS*/
