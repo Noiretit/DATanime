@@ -100,5 +100,12 @@ getDetailedAnimeInfo();
 */
 
 /* HTML FOR COVER
-
+<div class="row">
+                <!--Imagen cover large (API) del anime seleccionado desde listresult.js-->
+                <!--cada imagen sigue el patrón-->
+                <!--media.kitsu.io/anime/cover_images/IDDELANIME/large.jpg-->
+                <!--img-fluid para que quede como banner-->
+                <img id="detailedCoverImage" class="img-fluid"
+                    src="https://media.kitsu.io/anime/cover_images/1/large.jpg?1519178801">
+            </div>
 */

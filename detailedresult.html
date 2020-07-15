@@ -47,136 +47,118 @@
     </header>
     <!--Fin de navbar-->
     <!--Content-->
-    <main class="main-section pb-4">
-        <div class="container-fluid mb-4">
-            <div class="row">
-                <!--Imagen cover large (API) del anime seleccionado desde listresult.js-->
-                <!--cada imagen sigue el patrón-->
-                <!--media.kitsu.io/anime/cover_images/IDDELANIME/large.jpg-->
-                <!--img-fluid para que quede como banner-->
-                <img id="detailedCoverImage" class="img-fluid"
-                    src="https://media.kitsu.io/anime/cover_images/1/large.jpg?1519178801">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img id="detailedImage" src="https://media.kitsu.io/anime/poster_images/1/large.jpg?1431697256">
-                </div>
-                <div class="col-5 mt-2">
-                    <h4>Title: Cowboy Bebop</h4>
-                </div>
-            </div>
-            <!--Pop ups (modals)-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--Crea el pop-up log-in-->
-                        <!--The ID links this pop-up with the nav-bar element-->
-                        <div class="modal fade" id="loginModal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <!--Pop-up header-->
-                                    <div class="modal-header">
-                                        <h1>Log-in</h1>
-                                        <!--Button to close-->
-                                        <button class="btn btn-danger btn-lg" data-dismiss="modal">
-                                            <!--Close icon-->
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                    <!--Pop-up body-->
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="inputUserLogIn">User name</label>
-                                                <input type="user" class="form-control" id="inputUserLogIn"
-                                                    placeholder="ie: manolodabest" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPasswordLogIn">Password</label>
-                                                <input type="password" class="form-control" id="inputPasswordLogIn"
-                                                    placeholder="******" />
-                                            </div>
-                                        </form>
-                                        <!--Login message alerts-->
-                                        <div class="message-container-login"></div>
-                                    </div>
-                                    <!--Pop-up footer-->
-                                    <div class="modal-footer">
-                                        <!--Button to log-in-->
-                                        <button type="submit" id="login-button" class="btn btn-success btn-lg">
-                                            <!--Log-in icon-->
-                                            <i class="fas fa-sign-in-alt btn-lg"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin del pop-up log-in-->
+    <main class="main-section py-4">
 
-                        <!--Crea el pop-up register-->
-                        <!--The ID links this pop-up with the nav-bar element-->
-                        <div class="modal fade" id="registerModal">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <!--Pop-up header-->
-                                    <div class="modal-header">
-                                        <h1>Register</h1>
-                                        <!--Button to close-->
-                                        <button class="btn btn-danger btn-lg" data-dismiss="modal">
-                                            <!--Close icon-->
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
-                                    <!--Pop-up body-->
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="inputUser">User name:</label>
-                                                <input type="user" class="form-control" id="inputUser"
-                                                    placeholder="ie: manolodabest" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputEmail">Email address:</label>
-                                                <input type="email" class="form-control" id="inputEmail"
-                                                    placeholder="ie: manolodabest@yahoo.com" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPassword">Password:</label>
-                                                <input type="password" class="form-control" id="inputPassword"
-                                                    placeholder="******" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputRepeatPassword">Repeat your password:</label>
-                                                <input type="password" class="form-control" id="inputRepeatPassword"
-                                                    placeholder="******" />
-                                            </div>
-                                        </form>
-                                        <!--Register message alerts-->
-                                        <div class="message-container-register"></div>
-                                    </div>
-                                    <!--Pop-up footer-->
-                                    <div class="modal-footer">
-                                        <!--Register button-->
-                                        <!--La propiedad "disabled" desactiva el botón. Se activará o desactivará por el método-->
-                                        <button type="submit" id="register-button" class="btn btn-success btn-lg"
-                                            disabled>
-                                            <!--Register icon-->
-                                            <i class="fas fa-user-plus btn-lg"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Fin del pop-up register-->
-                    </div>
-                </div>
-            </div>
-            <!--End of pop-ups (modals)-->
-        </div>
+        <section id="animeSelector">
+        </section>
     </main>
     <!--Fin de main-->
+    <!--Pop ups (modals)-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Crea el pop-up log-in-->
+                <!--The ID links this pop-up with the nav-bar element-->
+                <div class="modal fade" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!--Pop-up header-->
+                            <div class="modal-header">
+                                <h1>Log-in</h1>
+                                <!--Button to close-->
+                                <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                                    <!--Close icon-->
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <!--Pop-up body-->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputUserLogIn">User name</label>
+                                        <input type="user" class="form-control" id="inputUserLogIn"
+                                            placeholder="ie: manolodabest" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPasswordLogIn">Password</label>
+                                        <input type="password" class="form-control" id="inputPasswordLogIn"
+                                            placeholder="******" />
+                                    </div>
+                                </form>
+                                <!--Login message alerts-->
+                                <div class="message-container-login"></div>
+                            </div>
+                            <!--Pop-up footer-->
+                            <div class="modal-footer">
+                                <!--Button to log-in-->
+                                <button type="submit" id="login-button" class="btn btn-success btn-lg">
+                                    <!--Log-in icon-->
+                                    <i class="fas fa-sign-in-alt btn-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin del pop-up log-in-->
+
+                <!--Crea el pop-up register-->
+                <!--The ID links this pop-up with the nav-bar element-->
+                <div class="modal fade" id="registerModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!--Pop-up header-->
+                            <div class="modal-header">
+                                <h1>Register</h1>
+                                <!--Button to close-->
+                                <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                                    <!--Close icon-->
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <!--Pop-up body-->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputUser">User name:</label>
+                                        <input type="user" class="form-control" id="inputUser"
+                                            placeholder="ie: manolodabest" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail">Email address:</label>
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            placeholder="ie: manolodabest@yahoo.com" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword">Password:</label>
+                                        <input type="password" class="form-control" id="inputPassword"
+                                            placeholder="******" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputRepeatPassword">Repeat your password:</label>
+                                        <input type="password" class="form-control" id="inputRepeatPassword"
+                                            placeholder="******" />
+                                    </div>
+                                </form>
+                                <!--Register message alerts-->
+                                <div class="message-container-register"></div>
+                            </div>
+                            <!--Pop-up footer-->
+                            <div class="modal-footer">
+                                <!--Register button-->
+                                <!--La propiedad "disabled" desactiva el botón. Se activará o desactivará por el método-->
+                                <button type="submit" id="register-button" class="btn btn-success btn-lg" disabled>
+                                    <!--Register icon-->
+                                    <i class="fas fa-user-plus btn-lg"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin del pop-up register-->
+            </div>
+        </div>
+    </div>
+    <!--End of pop-ups (modals)-->
     <!--Footer-->
     <footer class="bg-dark p-2">
         <div class="container">
@@ -209,6 +191,7 @@
     <script src="scripts/Database.js"></script>
     <script src="scripts/Validator.js"></script>
     <script src="scripts/Login.js"></script>
+    <script src="scripts/DetailedAnimeApi.js"></script>
 </body>
 
 </html>
