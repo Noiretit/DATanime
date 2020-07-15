@@ -46,57 +46,101 @@
         </nav>
     </header>
     <!--Fin de navbar-->
-    <!--Main-->
-    <main class="main-section">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <h1 id="faq-title" class="text-center text-lg forms faq-headers">Frequently asked questions (FAQ)</h1>
+    <!--Content-->
+    <main class="main-section pb-4">
+        <div class="container-fluid mb-4">
+            <div class="row">
+                <!--Imagen cover large (API) del anime seleccionado desde listresult.js-->
+                <!--cada imagen sigue el patrón-->
+                <!--media.kitsu.io/anime/cover_images/IDDELANIME/large.jpg-->
+                <!--img-fluid para que quede como banner-->
+                <img id="detailedCoverImage" class="img-fluid"
+                    src="https://media.kitsu.io/anime/cover_images/22/large.jpg?1519178933">
             </div>
         </div>
-        <div class="row justify-content-center my-1">
-            <div id="faq-list" class="col-lg-7 col-sm-10 pt-1 pb-3 mb-5 forms">
-                <div class="row">
-                    <div class="col-lg-12 col-sm-12 py-3">
-                        <h4 class="pb-1 faq-headers">What is <i class="bold-itoya">DATanime</i>?</h4>
-                        <div class="faq text-light pt-3 px-4">
-                            <p>
-                                <i class="bold-itoya">DATanime</i> is the first project of Ironhack Barcelona Web
-                                Development FT June 2020 bootcamp by <i id="creator">Sergio Centellas Ortega</i>.
-                            </p>
+        <div class="container">
+            <div class="row">
+                <div id="coverContainer" class="col">
+                    <img class="img-fluid" id="detailedImage"
+                        src="https://media.kitsu.io/anime/poster_images/21/medium.jpg?1423580507">
+                </div>
+                <div class="col forms">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1">Title</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.canonicalTitle - attributes.titles.ja_jp-->
+                                <p>Neon Genesis Evangelion - 新世紀エヴァンゲリオン</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 py-3">
-                        <h4 class="pb-1 faq-headers">Wait... what is anime?!</h4>
-                        <div class="faq text-light pt-3 px-4">
-                            <p>
-                                You could say anime is "japanese cartoons", but it's much more
-                                than that.
-                            </p>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1 pt-4">First & last episode</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.startDate - attributes-endDate-->
+                                <p>1995-10-04 - 1996-03-27</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 py-3">
-                        <h4 class="pb-1 faq-headers">
-                            Are there any special genres for anime?
-                        </h4>
-                        <div class="faq text-light pt-3 px-4">
-                            <p>
-                                Totally, some weird ones, I suggest you check them out in
-                                <a id="link" target="_blank"
-                                    href="https://www.looper.com/189420/anime-genres-explained/">here</a>.
-                            </p>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1 pt-4">Genre</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.averageRating-->
+                                <p>Sci-fi, Psychological, Dementia, Mecha, Drama, Action</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 py-3">
-                        <h4 class="pb-1 faq-headers">
-                            Okay, I got the animes I want to watch... where do I watch them?
-                        </h4>
-                        <div class="faq text-light pt-3 px-4">
-                            <p>
-                                You can use
-                                <a href="https://www.crunchyroll.com" id="link" target="_blank">Crunchyroll
-                                    platform</a>. If you want to see anime online for free, contact me
-                                through social media, down below!
-                            </p>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1 pt-4">Rating</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.averageRating-->
+                                <p>82.42</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1 pt-4">Number of episodes</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.episodeCount-->
+                                <p>26</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-1 pt-4">Rating position</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <!--attributes.ratingRank-->
+                                <p>146</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div id="synopsis" class="col forms">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="faq-headers pl-4">Synopsis</h4>
+                            <div class="faq text-light pt-3 px-4">
+                                <p>In the year 2015, the world stands on the brink of destruction. Humanity's last hope
+                                    lies in the hands of Nerv, a special agency under the United Nations, and their
+                                    Evangelions, giant machines capable of defeating the Angels who herald Earth's ruin.
+                                    Gendou Ikari, head of the organization, seeks compatible pilots who can synchronize
+                                    with the Evangelions and realize their true potential. Aiding in this defensive
+                                    endeavor are talented personnel Misato Katsuragi, Head of Tactical Operations, and
+                                    Ritsuko Akagi, Chief Scientist. Face to face with his father for the first time in
+                                    years, 14-year-old Shinji Ikari's average life is irreversibly changed when he is
+                                    whisked away into the depths of Nerv, and into a harrowing new destiny—he must
+                                    become the pilot of Evangelion Unit-01 with the fate of mankind on his shoulders.
+                                    Written by Hideaki Anno, Neon Genesis Evangelion is a heroic tale of a young boy who
+                                    will become a legend. But as this psychological drama unfolds, ancient secrets
+                                    beneath the big picture begin to bubble to the surface...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +159,7 @@
                         <div class="modal-content">
                             <!--Pop-up header-->
                             <div class="modal-header">
-                                <h1 class="popup-title">Log-in</h1>
+                                <h1>Log-in</h1>
                                 <!--Button to close-->
                                 <button class="btn btn-danger btn-lg" data-dismiss="modal">
                                     <!--Close icon-->
@@ -126,12 +170,12 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="inputUserLogIn">User name:</label>
+                                        <label for="inputUserLogIn">User name</label>
                                         <input type="user" class="form-control" id="inputUserLogIn"
                                             placeholder="ie: manolodabest" />
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputPasswordLogIn">Password:</label>
+                                        <label for="inputPasswordLogIn">Password</label>
                                         <input type="password" class="form-control" id="inputPasswordLogIn"
                                             placeholder="******" />
                                     </div>
@@ -159,7 +203,7 @@
                         <div class="modal-content">
                             <!--Pop-up header-->
                             <div class="modal-header">
-                                <h1 class="popup-title">Register</h1>
+                                <h1>Register</h1>
                                 <!--Button to close-->
                                 <button class="btn btn-danger btn-lg" data-dismiss="modal">
                                     <!--Close icon-->
@@ -210,12 +254,6 @@
         </div>
     </div>
     <!--End of pop-ups (modals)-->
-    <div class="container-fluid">
-        <div class="row">
-            <!--img-fluid para que quede como banner-->
-            <img class="img-fluid" src="https://media.kitsu.io/anime/cover_images/23/large.jpg?1519178937">
-        </div>
-    </div>
     <!--Footer-->
     <footer class="bg-dark p-2">
         <div class="container">
@@ -248,6 +286,7 @@
     <script src="scripts/Database.js"></script>
     <script src="scripts/Validator.js"></script>
     <script src="scripts/Login.js"></script>
+    <script src="/testFieldForApiMoreInfo.js"></script>
 </body>
 
 </html>

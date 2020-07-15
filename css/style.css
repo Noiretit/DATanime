@@ -97,6 +97,7 @@ body {
 
 #listResult>div {
   margin: 15px;
+  width: 18rem;
 }
 
 .card-body>h5 {
@@ -111,6 +112,11 @@ body {
 #detailedImage {
   border-radius: 5px;
   border: 4px solid #9d9fd1;
+}
+
+#coverContainer {
+  display: flex;
+  justify-content: center;
 }
 
 /*END OF DETAILED RESULT*/
