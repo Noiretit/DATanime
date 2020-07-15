@@ -24,7 +24,8 @@ function getDetailedAnimeInfo() {
                             <div class="col">
                                 <h4 class="faq-headers pl-1">Title</h4>
                                 <div class="faq text-light pt-3 px-4">
-                                    <p>${animeData.attributes.canonicalTitle} - ${animeData.attributes.titles.ja_jp}</p>
+                                    <p>🇬🇧 ${animeData.attributes.canonicalTitle}</p>
+                                    <p>🇯🇵 ${animeData.attributes.titles.ja_jp}</p>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +33,7 @@ function getDetailedAnimeInfo() {
                             <div class="col">
                                 <h4 class="faq-headers pl-1 pt-4">First & last episode</h4>
                                 <div class="faq text-light pt-3 px-4">
-                                    <p>${animeData.attributes.startDate} - ${animeData.attributes.endDate}</p>
+                                    <p>🟢 ${animeData.attributes.startDate} --- ${animeData.attributes.endDate} ⚪️</p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +49,7 @@ function getDetailedAnimeInfo() {
                             <div class="col">
                                 <h4 class="faq-headers pl-1 pt-4">Rating</h4>
                                 <div class="faq text-light pt-3 px-4">
-                                    <p>${animeData.attributes.averageRating}</p>
+                                    <p>⭐️ ${animeData.attributes.averageRating} ⭐️</p>
                                 </div>
                             </div>
                         </div>

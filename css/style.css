@@ -82,6 +82,10 @@ body {
   border-radius: 15px;
 }
 
+#randomizerForm {
+  width: 400px;
+}
+
 /*END OF INDEX*/
 
 /*LIST RESULT*/
