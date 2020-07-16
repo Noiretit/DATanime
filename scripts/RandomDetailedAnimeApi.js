@@ -1,26 +1,24 @@
 'use strict'
 
-const urlParams = new URLSearchParams(window.location.search);
-const animeId = urlParams.get('id');
 
-function getDetailedAnimeInfo() {
+
+function getRandomDetailedAnime() {
+    let randomAnimeId = Math.round(Math.floor((Math.random() * 400)));
+
     const animeSelectorContainer = document.querySelector("#animeSelector");
-
     const emoji = "⚪️ ";
     
-    const coverAnimeSelector = document.querySelector("#detailedCoverImage");
-    
-    fetch(`https://dat-anime-api.herokuapp.com/anime/${animeId}`)
-        .then((response) => response.json())
+    fetch(`https://dat-anime-api.herokuapp.com/anime/${randomAnimeId}`)
+        .then((animeResponse) => animeResponse.json())
         .then((animeData) => {
-            const titleForYoutubeSearch = animeData.attributes.canonicalTitle.split(' ').join('+');
+        const titleForYoutubeSearch = animeData.attributes.canonicalTitle.split(' ').join('+');
             const animeFullInfo = document.createElement("div");
             animeFullInfo.classList.add("container");
             animeFullInfo.innerHTML = `
             <div class="row">
                     <div id="coverContainer" class="col-sm-7 my-2">
                         <img class="img-fluid" id="detailedImage"
-                            src="https://media.kitsu.io/anime/poster_images/${animeId}/large.jpg?1423580507">
+                            src="https://media.kitsu.io/anime/poster_images/${randomAnimeId}/large.jpg?1423580507">
                     </div>
                     <div class="col-sm-5 forms">
                         <div class="row">
@@ -91,25 +89,6 @@ function getDetailedAnimeInfo() {
         .catch((err) => {});
 };
 
-getDetailedAnimeInfo();
+getRandomDetailedAnime();
 
-/* JAVASCRIPT FOR COVER
-.then((animeData) => {
-            cont coverAnime = document.createElement("img");
-            coverAnime.innerHTML = `
-            <img  class="img-fluid"
-                    src="https://media.kitsu.io/anime/cover_images/22/large.jpg?1519178933">
-            `
-        })
-*/
-
-/* HTML FOR COVER
-<div class="row">
-                <!--Imagen cover large (API) del anime seleccionado desde listresult.js-->
-                <!--cada imagen sigue el patrón-->
-                <!--media.kitsu.io/anime/cover_images/IDDELANIME/large.jpg-->
-                <!--img-fluid para que quede como banner-->
-                <img id="detailedCoverImage" class="img-fluid"
-                    src="https://media.kitsu.io/anime/cover_images/1/large.jpg?1519178801">
-            </div>
-*/
+console.log("hola")
