@@ -17,7 +17,7 @@ function getDetailedAnimeInfo() {
             <div class="row">
                     <div id="coverContainer" class="col">
                         <img class="img-fluid" id="detailedImage"
-                            src="https://media.kitsu.io/anime/poster_images/${animeId}/medium.jpg?1423580507">
+                            src="https://media.kitsu.io/anime/poster_images/${animeId}/large.jpg?1423580507">
                     </div>
                     <div class="col forms">
                         <div class="row">
