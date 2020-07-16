@@ -92,6 +92,16 @@ body {
   margin: 0 30px;
 }
 
+.bg-dark {
+  height: 180px;
+}
+
+@media (min-width: 320px) {
+  .bg-dark {
+    height: auto;
+  }
+}
+
 /*END OF INDEX*/
 
 /*LIST RESULT*/
@@ -219,11 +229,11 @@ body {
 #animatedFaq {
   -webkit-animation-name: animatedFaq;
   animation-name: animatedFaq;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 @-webkit-keyframes animatedFaq {
