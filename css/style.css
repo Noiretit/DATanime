@@ -92,16 +92,6 @@ body {
   margin: 0 30px;
 }
 
-.bg-dark {
-  height: 180px;
-}
-
-@media (min-width: 320px) {
-  .bg-dark {
-    height: auto;
-  }
-}
-
 /*END OF INDEX*/
 
 /*LIST RESULT*/
