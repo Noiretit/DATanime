@@ -75,16 +75,28 @@ body {
   padding: 20px 5px 5px 5px
 }
 
-.form-index {
+.form-index-list {
   font-family: "Light";
-  background-color: rgba(247, 246, 248, 0.9);
+  background-color: rgba(31, 219, 194, 0.555);
   ;
   border-radius: 15px;
 }
 
-.form-group {
-  margin-left: 30px;
-  margin-right: 30px;
+.form-index-random {
+  font-family: "Light";
+  background-color: rgba(198, 159, 238, 0.548);
+  ;
+  border-radius: 15px;
+}
+
+.form-index-title {
+  background-color: rgba(255, 174, 0, 0.7);
+  width: fit-content;
+  display: inline-block;
+  border-radius: 25px;
+  box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+  margin-top: 1rem;
 }
 
 #randomizerForm {

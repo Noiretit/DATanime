@@ -90,5 +90,3 @@ function getRandomDetailedAnime() {
 };
 
 getRandomDetailedAnime();
-
-console.log("hola")

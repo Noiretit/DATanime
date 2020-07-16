@@ -49,37 +49,47 @@
   <!--Main-->
   <main class="main-section">
     <div class="container text-center p-4">
-      <h1 class="display-4">
-        Welcome to
-        <img id="dat-logo" src="images/pablo-logo-trans.png" alt="anime-logo" width="200px" />
-      </h1>
+      <div class="form-group">
+        <h1 class="display-4 form-index-title">
+          Welcome to
+          <img id="dat-logo" src="images/pablo-logo-trans.png" alt="anime-logo" width="200px" />
+        </h1>
+      </div>
       <div class="container header-index px-3 my-5">
         <p class="lead">
-          <i class="bold-itoya">DATanime</i> is way to find animes from all
+          <i class="bold-itoya">DATanime</i> is an easy tool to find animes from all
           times and genres.
         </p>
         <p class="lead">
-          It's very easy to use: just click on the button down below and it
-          will show you 10 random animes of any year and genre.
+          It's very easy to use: just click on any button down below to either find a list of 10 random animes or 1 detailed random anime from any year and any genre.
         </p>
         <p class="lead">すごい, <i class="bold-itoya">right?</i></p>
       </div>
-      <div class="container pt-4">
-        <form id="randomizerForm">
-          <div class="form-group form-index p-4">
-            <label class="bold-itoya">Ready...</label>
+      <div class="container mt-1">
+        <div class="row">
+          <div class="col-sm-6 mb-4">
+            <form id="randomizerForm">
+              <div class="form-group form-index-list p-4">
+                <label class="bold-itoya">Gimme a list, gimme a HUGE list!</label>
+              </div>
+              <div class="form-group form-index-list p-4">
+                <a href="listresult.html" target="_blank" type="submit" id="search-button" class="btn btn-outline-primary btn-md btn-block bold-itoya">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </form>
           </div>
-          <div class="form-group form-index p-4">
-            <label class="bold-itoya">set...</label>
+          <div class="col-sm-6">
+            <div class="form-group form-index-random p-4">
+              <label class="bold-itoya">Hey, just <i class="bold-itoya">ONE</i> random anime.</label>
+            </div>
+            <div class="form-group form-index-random p-4">
+              <a href="randomdetailedanime.html" target="_blank" type="submit" id="search-button" class="btn btn-outline-info btn-md btn-block bold-itoya">
+                <i class="fas fa-random"></i>
+              </a>
+            </div>
           </div>
-          <div class="form-group form-index p-4">
-            <a href="listresult.html" target="_blank" type="submit" id="search-button"
-              class="btn btn-outline-primary btn-md btn-block bold-itoya">
-              <i class="fas fa-search"></i>
-              GO!
-            </a>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <!--Pop ups (modals)-->
