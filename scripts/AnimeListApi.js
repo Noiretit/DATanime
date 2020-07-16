@@ -19,15 +19,15 @@ function getAnimes() {
             .then((animeResponse) => animeResponse.json())
             .then((animeData) => {
                 const animeCard = document.createElement("div");
-                animeCard.classList.add("card", "border-dark");
+                animeCard.classList.add("card", "border-dark", "img-hover-zoom");
                 animeCard.innerHTML = `
                 <img class="card-img-top" src="${animeData.attributes.posterImage.large}" alt="${animeData.attributes.slug}-cover-image">
                     <div class="card-body">
-                        <h5 class="card-title pb-3">${animeData.attributes.canonicalTitle}</h5>
-                        <p class="card-text">⭐️ Score: ${animeData.attributes.averageRating} over 100.</p>
-                        <p class="card-text">🟢 First aired on: ${animeData.attributes.startDate}</p>
-                        <p class="card-text">⚪️ Finished on: ${animeData.attributes.endDate}</p>
-                        <a target="_blank" href="detailedresult.html?id=${animeData.id}" class="btn btn-primary">See more...</a>
+                        <h5 class="card-title pb-1"><u>${animeData.attributes.canonicalTitle}</u></h5>
+                        <p class="card-text">⭐️ <span class="bold-itoya">Score:</span> ${animeData.attributes.averageRating} over 100.</p>
+                        <p class="card-text">🟢 <span class="bold-itoya">First aired in:</span> ${animeData.attributes.startDate}</p>
+                        <p class="card-text">⚪️ <span class="bold-itoya">Finished in:</span> ${animeData.attributes.endDate ? animeData.attributes.endDate : "Still on air!"}</p>
+                        <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn btn-outline-info">See more...</a>
                     </div>`;
 
                 section.appendChild(animeCard)
