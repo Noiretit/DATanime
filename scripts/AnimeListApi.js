@@ -27,7 +27,7 @@ function getAnimes() {
                         <p class="card-text">⭐️ Score: ${animeData.attributes.averageRating} over 100.</p>
                         <p class="card-text">🟢 First aired on: ${animeData.attributes.startDate}</p>
                         <p class="card-text">⚪️ Finished on: ${animeData.attributes.endDate}</p>
-                        <a target="_blank" href="/detailedresult.html?id=${animeData.id}" class="btn btn-primary">See more...</a>
+                        <a target="_blank" href="detailedresult.html?id=${animeData.id}" class="btn btn-primary">See more...</a>
                     </div>`;
 
                 section.appendChild(animeCard)
