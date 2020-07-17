@@ -30,7 +30,7 @@ function getAnimes() {
                     </div>
                     <div class="card-body footer-custom">
                         <div class="see-more-center form-index-footer"> 
-                            <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn list-button">See more...</a>
+                            <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn list-button bold-itoya">See more...</a>
                         </div>
                     </div>`;
 
