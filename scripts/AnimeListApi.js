@@ -22,12 +22,14 @@ function getAnimes() {
                 animeCard.classList.add("card", "navy-border", "img-hover-zoom");
                 animeCard.innerHTML = `
                 <img class="card-img-top" src="${animeData.attributes.posterImage.large}" alt="${animeData.attributes.slug}-cover-image">
-                    <div class="card-body">
+                    <div class="card-body img-shadow">
                         <h5 class="card-title pb-1"><u>${animeData.attributes.canonicalTitle}</u></h5>
                         <p class="card-text">⭐️ <span class="bold-itoya">Score:</span> ${animeData.attributes.averageRating} over 100.</p>
                         <p class="card-text">🟢 <span class="bold-itoya">First aired in:</span> ${animeData.attributes.startDate}</p>
                         <p class="card-text">⚪️ <span class="bold-itoya">Finished in:</span> ${animeData.attributes.endDate ? animeData.attributes.endDate : "Still on air!"}</p>
-                        <div class="see-more-center"> 
+                    </div>
+                    <div class="card-body footer-custom">
+                        <div class="see-more-center form-index-footer"> 
                             <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn list-button">See more...</a>
                         </div>
                     </div>`;
