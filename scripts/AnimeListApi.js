@@ -19,7 +19,7 @@ function getAnimes() {
             .then((animeResponse) => animeResponse.json())
             .then((animeData) => {
                 const animeCard = document.createElement("div");
-                animeCard.classList.add("card", "border-dark", "img-hover-zoom");
+                animeCard.classList.add("card", "navy-border", "img-hover-zoom");
                 animeCard.innerHTML = `
                 <img class="card-img-top" src="${animeData.attributes.posterImage.large}" alt="${animeData.attributes.slug}-cover-image">
                     <div class="card-body">
@@ -27,7 +27,9 @@ function getAnimes() {
                         <p class="card-text">⭐️ <span class="bold-itoya">Score:</span> ${animeData.attributes.averageRating} over 100.</p>
                         <p class="card-text">🟢 <span class="bold-itoya">First aired in:</span> ${animeData.attributes.startDate}</p>
                         <p class="card-text">⚪️ <span class="bold-itoya">Finished in:</span> ${animeData.attributes.endDate ? animeData.attributes.endDate : "Still on air!"}</p>
-                        <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn btn-outline-info">See more...</a>
+                        <div class="see-more-center"> 
+                            <a target="_blank" href="/DATanime/detailedresult.html?id=${animeData.id}" class="btn list-button">See more...</a>
+                        </div>
                     </div>`;
 
                 section.appendChild(animeCard)

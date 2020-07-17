@@ -99,16 +99,27 @@ body {
 
 .form-index-title {
   background-color: rgba(243, 182, 31, 1);
+  border-bottom: 5px solid;
+  border-color: rgb(14, 4, 58);
   box-shadow: 0px 2px 15px 10px rgba(0, 0, 0, 0.4);
   padding: 15px 20px;
   text-align: center;
-  border-bottom: 5px solid;
-  border-color: rgb(14, 4, 58);
 }
 
 /*END OF INDEX*/
 
 /*LIST RESULT*/
+
+.navy-border {
+  box-shadow: 0px 3px 15px -1px rgba(11, 3, 45, 0.9);
+}
+
+.list-button {
+  background-color: rgba(243, 182, 31, 1);
+  border-bottom: 5px solid;
+  border-color: rgb(14, 4, 58);
+}
+
 #moreInfo {
   background-color: rgba(11, 3, 45, 0.8);
   text-align: center;
@@ -117,6 +128,7 @@ body {
 
 #listResult {
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 #listResult>div {
@@ -126,7 +138,21 @@ body {
 
 .card-body>h5 {
   font-family: "Bold";
+  text-align: center;
 }
+
+.card-text {
+  text-align: center;
+}
+
+.see-more-center {
+  text-align: center;
+}
+
+.card-body {
+  background-image: linear-gradient(-180deg, #BBE7EB, #ffff);
+}
+
 
 .zoomIn {
   -webkit-animation-name: zoomIn;
@@ -135,6 +161,7 @@ body {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes zoomIn {
