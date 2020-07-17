@@ -15,31 +15,30 @@ DATanime is developed using Javascript as part of the first project on the Ironh
 ---
 
 - Responsive webpage (mobile-first, tablet, laptop, desktop).
-
 - Displays 10 random animes from any time and genre in an ordered way (user-friendly).
 - Nav-bar (containing a pop-up register form, a pop-up log-in form (forms with validation), FAQS link) and footer on every page.
 - A Home-page with:
   - an anime randomizer button.
 - A results page with:
-  - the 10 selected animes showing title, year and genre.
+  - the 10 selected animes showing an image, score, title, first aired and last aired.
 - More detailed results page depending on the anime selected showing
-  - title, genres (if more than one), aired year and synopsis.
+  - title, aired year and synopsis.
 - A FAQS page.
-
 - User data stored in local storage.
 
 #### Backlog
 
 ---
 
-- Random anime facts on home-page.
+- Youtube anime opening searcher.
+- Carousel with random anime cover pictures in the background
+- "Suggest me something": shows a random detailed anime from any year/genre/score.
 - Once user is logged in, hide "register" and "log-in" from dropdown menu and show "log-out".
 - More search options:
   - only by year (no genre)
   - only by genre (no year)
   - by year and genre.
-- "Suggest me something": shows a random detailed anime from any year/genre/score.
-- Carousel with random anime pictures in the background
+- Heavy CSS styling
 
 #### Wireframes
 
@@ -78,3 +77,5 @@ https://trello.com/b/ssJxm3bw/m1-proyecto-datanime
 https://github.com/Noiretit
 
 ##### Slides
+
+https://docs.google.com/presentation/d/10aEdMfKdea7SfatkKSJpBVbulSdxrELXYasoDh6Ivuk/edit
