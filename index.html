@@ -1,484 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="Sergio Centellas Ortega" />
-    <meta
-      name="description"
-      content="This website searches the internet for the best animes on the selected year and genre"
-    />
-    <meta
-      name="keywords"
-      content="anime, finder, best, top, top10, japan, manga"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/373d04aa12.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>DATanime</title>
-    <!--Favicon-->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="images/favicon-pablo.png"
-    />
-  </head>
 
-  <body>
-    <!--Navbar-->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand pl-5" href="index.html">
-          <img
-            src="images/pablo-logo-trans-blanco.svg"
-            alt="anime-logo"
-            width="200px"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end px-4"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav px-5">
-            <li class="nav-item px-3">
-              <!--Data-target links the nav-bar element with the modal (pop-up) id-->
-              <a
-                data-toggle="modal"
-                data-target="#registerModal"
-                class="nav-link bold-itoya text-white"
-                >Register</a
-              >
-            </li>
-            <li class="nav-item px-3">
-              <!--Data-target links the nav-bar element with the modal (pop-up) id-->
-              <a
-                data-toggle="modal"
-                data-target="#loginModal"
-                class="nav-link bold-itoya text-white"
-                >Log-in</a
-              >
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link bold-itoya text-white" href="faqs.html">FAQ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!--Fin de navbar-->
-    <!--Main-->
-    <main class="main-section">
-      <div class="form-group">
-        <h1 class="display-4 form-index-title">
-          entering
-          <img
-            id="dat-logo"
-            src="images/pablo-logo-trans.svg"
-            alt="anime-logo"
-            width="200px"
-          />
-        </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Sergio Centellas Ortega" />
+  <meta name="description"
+    content="DATanime searches the (deep) web for that guilty-pleasure, late-night anime to watch" />
+  <meta name="keywords" content="anime, finder, best, top, top10, japan, manga" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/373d04aa12.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>DATanime</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" type="image/png" href="images/favicon-pablo.png" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand pl-5" href="index.html">
+        <img src="images/pablo-logo-trans-blanco.svg" alt="anime-logo" width="200px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end px-4" id="navbarNav">
+        <ul class="navbar-nav px-5">
+          <li class="nav-item px-3">
+            <!--Data-target links the nav-bar element with the modal (pop-up) id-->
+            <a data-toggle="modal" data-target="#registerModal" class="nav-link bold-itoya text-white">Register</a>
+          </li>
+          <li class="nav-item px-3">
+            <!--Data-target links the nav-bar element with the modal (pop-up) id-->
+            <a data-toggle="modal" data-target="#loginModal" class="nav-link bold-itoya text-white">Log-in</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link bold-itoya text-white" href="faqs.html">FAQ</a>
+          </li>
+        </ul>
       </div>
-      <div class="container text-center p-4">
-        <div class="container header-index px-3 my-5">
-          <p class="lead">
-            <i class="bold-itoya">DATanime</i> is an easy tool to find animes
-            from all times and genres.
-          </p>
-          <p class="lead">
-            It's very easy to use: just click on any button down below to either
-            find a list of 10 random animes or 1 detailed random anime from any
-            year and any genre.
-          </p>
-          <p class="lead">すごい, <i class="bold-itoya">right?</i></p>
-        </div>
-        <div class="container mt-1">
-          <div class="row">
-            <div class="col-sm-6 mb-4">
-              <div class="form-group form-index-list p-4">
-                <a
-                  href="listresult.html"
-                  target="_blank"
-                  type="submit"
-                  id="search-button"
-                  class="btn btn-outline-warning btn-md btn-block bold-itoya"
-                >
-                  Gimme a HUGE list!
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group form-index-random p-4">
-                <a
-                  href="randomdetailedanime.html"
-                  target="_blank"
-                  type="submit"
-                  id="search-button"
-                  class="btn btn-outline-warning btn-md btn-block bold-itoya"
-                >
-                  One random anime?
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    </nav>
+  </header>
+  <!--Fin de navbar-->
+  <!--Main-->
+  <main class="main-section">
+    <div class="form-group">
+      <h1 class="display-4 form-index-title">
+        entering
+        <img id="dat-logo" src="images/pablo-logo-trans.svg" alt="anime-logo" width="200px" />
+      </h1>
+    </div>
+    <div class="container text-center p-4">
+      <div class="container header-index px-3 my-5">
+        <p class="lead">
+          <i class="bold-itoya">DATanime</i> is an easy tool to find animes
+          from all times and genres.
+        </p>
+        <p class="lead">
+          It's very easy to use: just click on any button down below to either
+          find a list of 10 random animes or 1 detailed random anime from any
+          year and any genre.
+        </p>
+        <p class="lead">すごい, <i class="bold-itoya">right?</i></p>
       </div>
-      <!--Pop ups (modals)-->
-      <div class="container">
+      <div class="container mt-1">
         <div class="row">
-          <div class="col-md-12">
-            <!--Crea el pop-up log-in-->
-            <!--The ID links this pop-up with the nav-bar element-->
-            <div class="modal fade" id="loginModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <!--Pop-up header-->
-                  <div class="modal-header">
-                    <h1 class="popup-title">Log-in</h1>
-                    <!--Button to close-->
-                    <button class="btn btn-danger btn-lg" data-dismiss="modal">
-                      <!--Close icon-->
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                  <!--Pop-up body-->
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="inputUserLogIn">User name:</label>
-                        <input
-                          type="user"
-                          class="form-control"
-                          id="inputUserLogIn"
-                          placeholder="ie: manolodabest"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPasswordLogIn">Password:</label>
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="inputPasswordLogIn"
-                          placeholder="******"
-                        />
-                      </div>
-                    </form>
-                    <!--Login message alerts-->
-                    <div class="message-container-login"></div>
-                  </div>
-                  <!--Pop-up footer-->
-                  <div class="modal-footer">
-                    <!--Button to log-in-->
-                    <button
-                      type="submit"
-                      id="login-button"
-                      class="btn btn-success btn-lg"
-                    >
-                      <!--Log-in icon-->
-                      <i class="fas fa-sign-in-alt btn-lg"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div class="col-sm-6 mb-4">
+            <div class="form-group form-index-list p-4">
+              <a href="listresult.html" target="_blank" type="submit" id="search-button"
+                class="btn btn-outline-warning btn-md btn-block bold-itoya">
+                Gimme a HUGE list!
+              </a>
             </div>
-            <!--Fin del pop-up log-in-->
-
-            <!--Crea el pop-up register-->
-            <!--The ID links this pop-up with the nav-bar element-->
-            <div class="modal fade" id="registerModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <!--Pop-up header-->
-                  <div class="modal-header">
-                    <h1 class="popup-title">Register</h1>
-                    <!--Button to close-->
-                    <button class="btn btn-danger btn-lg" data-dismiss="modal">
-                      <!--Close icon-->
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>
-                  <!--Pop-up body-->
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <label for="inputUser">User name:</label>
-                        <input
-                          type="user"
-                          class="form-control"
-                          id="inputUser"
-                          placeholder="ie: manolodabest"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail">Email address:</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="inputEmail"
-                          placeholder="ie: manolodabest@yahoo.com"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword">Password:</label>
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="inputPassword"
-                          placeholder="******"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputRepeatPassword"
-                          >Repeat your password:</label
-                        >
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="inputRepeatPassword"
-                          placeholder="******"
-                        />
-                      </div>
-                    </form>
-                    <!--Register message alerts-->
-                    <div class="message-container-register"></div>
-                  </div>
-                  <!--Pop-up footer-->
-                  <div class="modal-footer">
-                    <!--Register button-->
-                    <!--La propiedad "disabled" desactiva el botón. Se activará o desactivará por el método-->
-                    <button
-                      type="submit"
-                      id="register-button"
-                      class="btn btn-success btn-lg"
-                      disabled
-                    >
-                      <!--Register icon-->
-                      <i class="fas fa-user-plus btn-lg"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Fin del pop-up register-->
           </div>
-        </div>
-      </div>
-      <!--End of pop-ups (modals)-->
-    </main>
-    <!--Fin de main-->
-    <div class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/199/small.jpg"
-            alt="anime1"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/244/small.jpg"
-            alt="anime2"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/142/small.jpg"
-            alt="anime3"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/148/small.jpg"
-            alt="anime4"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/25/small.jpg"
-            alt="anime5"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/21/small.jpg"
-            alt="anime6"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/47/small.jpg"
-            alt="anime7"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/45/small.jpg"
-            alt="anime8"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/38/small.jpg"
-            alt="anime9"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/22/small.jpg"
-            alt="anime10"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/10/small.jpg"
-            alt="anime11"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/11/small.jpg"
-            alt="anime12"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/12/small.jpg"
-            alt="anime13"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/3/small.jpg"
-            alt="anime14"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/2/small.jpg"
-            alt="anime15"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/394/small.jpg"
-            alt="anime16"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/395/small.jpg"
-            alt="anime17"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/403/small.jpg"
-            alt="anime18"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/358/small.jpg"
-            alt="anime19"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            class="d-block w-100"
-            src="https://media.kitsu.io/anime/cover_images/359/small.jpg"
-            alt="anime20"
-          />
+          <div class="col-sm-6">
+            <div class="form-group form-index-random p-4">
+              <a href="randomdetailedanime.html" target="_blank" type="submit" id="search-button"
+                class="btn btn-outline-warning btn-md btn-block bold-itoya">
+                One random anime?
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--Footer-->
-    <footer class="bg-dark p-2">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center mt-2 mb-2">
-            <a
-              target="_blank"
-              href="https://www.facebook.com/sergio.centellasortega"
-              ><i class="fa fa-facebook fa-2x text-white mx-3"></i
-            ></a>
-            <a target="_blank" href="http://instagram.com/condicionesdeuso"
-              ><i class="fa fa-instagram fa-2x text-white mx-3"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/sergio.centellasortega"
-              ><i class="fa fa-twitter fa-2x text-white mx-3"></i
-            ></a>
-            <p class="text-light pt-3 m-0">©Copyright 2020</p>
+    <!--Pop ups (modals)-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!--Crea el pop-up log-in-->
+          <!--The ID links this pop-up with the nav-bar element-->
+          <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--Pop-up header-->
+                <div class="modal-header">
+                  <h1 class="popup-title">Log-in</h1>
+                  <!--Button to close-->
+                  <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                    <!--Close icon-->
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <!--Pop-up body-->
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="inputUserLogIn">User name:</label>
+                      <input type="user" class="form-control" id="inputUserLogIn" placeholder="ie: manolodabest" />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPasswordLogIn">Password:</label>
+                      <input type="password" class="form-control" id="inputPasswordLogIn" placeholder="******" />
+                    </div>
+                  </form>
+                  <!--Login message alerts-->
+                  <div class="message-container-login"></div>
+                </div>
+                <!--Pop-up footer-->
+                <div class="modal-footer">
+                  <!--Button to log-in-->
+                  <button type="submit" id="login-button" class="btn btn-success btn-lg">
+                    <!--Log-in icon-->
+                    <i class="fas fa-sign-in-alt btn-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
+          <!--Fin del pop-up log-in-->
+
+          <!--Crea el pop-up register-->
+          <!--The ID links this pop-up with the nav-bar element-->
+          <div class="modal fade" id="registerModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!--Pop-up header-->
+                <div class="modal-header">
+                  <h1 class="popup-title">Register</h1>
+                  <!--Button to close-->
+                  <button class="btn btn-danger btn-lg" data-dismiss="modal">
+                    <!--Close icon-->
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <!--Pop-up body-->
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="inputUser">User name:</label>
+                      <input type="user" class="form-control" id="inputUser" placeholder="ie: manolodabest" />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email address:</label>
+                      <input type="email" class="form-control" id="inputEmail"
+                        placeholder="ie: manolodabest@yahoo.com" />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword">Password:</label>
+                      <input type="password" class="form-control" id="inputPassword" placeholder="******" />
+                    </div>
+                    <div class="form-group">
+                      <label for="inputRepeatPassword">Repeat your password:</label>
+                      <input type="password" class="form-control" id="inputRepeatPassword" placeholder="******" />
+                    </div>
+                  </form>
+                  <!--Register message alerts-->
+                  <div class="message-container-register"></div>
+                </div>
+                <!--Pop-up footer-->
+                <div class="modal-footer">
+                  <!--Register button-->
+                  <!--La propiedad "disabled" desactiva el botón. Se activará o desactivará por el método-->
+                  <button type="submit" id="register-button" class="btn btn-success btn-lg" disabled>
+                    <!--Register icon-->
+                    <i class="fas fa-user-plus btn-lg"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin del pop-up register-->
         </div>
       </div>
-    </footer>
-    <!--Fin de footer-->
-    <!--Bootstrap puglins-->
+    </div>
+    <!--End of pop-ups (modals)-->
+  </main>
+  <!--Fin de main-->
+  <div class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/199/small.jpg" alt="anime1" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/244/small.jpg" alt="anime2" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/142/small.jpg" alt="anime3" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/148/small.jpg" alt="anime4" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/25/small.jpg" alt="anime5" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/21/small.jpg" alt="anime6" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/47/small.jpg" alt="anime7" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/45/small.jpg" alt="anime8" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/38/small.jpg" alt="anime9" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/22/small.jpg" alt="anime10" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/10/small.jpg" alt="anime11" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/11/small.jpg" alt="anime12" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/12/small.jpg" alt="anime13" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/3/small.jpg" alt="anime14" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/2/small.jpg" alt="anime15" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/394/small.jpg" alt="anime16" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/395/small.jpg" alt="anime17" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/403/small.jpg" alt="anime18" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/358/small.jpg" alt="anime19" />
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.kitsu.io/anime/cover_images/359/small.jpg" alt="anime20" />
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="bg-dark p-2">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-2 mb-2">
+          <a target="_blank" href="https://www.facebook.com/sergio.centellasortega"><i
+              class="fa fa-facebook fa-2x text-white mx-3"></i></a>
+          <a target="_blank" href="http://instagram.com/condicionesdeuso"><i
+              class="fa fa-instagram fa-2x text-white mx-3"></i></a>
+          <a target="_blank" href="https://www.facebook.com/sergio.centellasortega"><i
+              class="fa fa-twitter fa-2x text-white mx-3"></i></a>
+          <p class="text-light pt-3 m-0">©Copyright 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Fin de footer-->
+  <!--Bootstrap puglins-->
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/Register.js"></script>
-    <script src="scripts/User.js"></script>
-    <script src="scripts/Database.js"></script>
-    <script src="scripts/Validator.js"></script>
-    <script src="scripts/Login.js"></script>
-    <script src="scripts/AnimeListApi.js"></script>
-    <script src="scripts/DetailedAnimeApi.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="scripts/Register.js"></script>
+  <script src="scripts/User.js"></script>
+  <script src="scripts/Database.js"></script>
+  <script src="scripts/Validator.js"></script>
+  <script src="scripts/Login.js"></script>
+  <script src="scripts/AnimeListApi.js"></script>
+  <script src="scripts/DetailedAnimeApi.js"></script>
+</body>
+
 </html>
